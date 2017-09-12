@@ -3,6 +3,11 @@ export class Age {
     this.age = age;
   }
 
+  calculateAge(birthday, today){
+    let today = 
+    let age = today - birthday;
+    return age;
+  }
   inSeconds(age) {
     let ageInSeconds = age * 31536000;
     return ageInSeconds;
@@ -32,11 +37,12 @@ export class Age {
     return ageOnJupiter;
   }
 
-  lifeExpectancy(){
-    //mars
-    //venus
-    //mercury
-    //jupiter
-    //earth
+  lifeExpectancyOnEarth(age){
+    let yearsLeftToLive = 122 - age;
+    if
+    //righty or lefty (left -9)
+    //sleep per night(less than 6 h per night -?)
+    //
+    return yearsLeftToLive;
   }
 }
