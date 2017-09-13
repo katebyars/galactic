@@ -3,11 +3,13 @@ export class Age {
     this.age = age;
   }
 
-  // calculateAge(birthday, today){
-  //   let today = 0;
-  //   let age = today - birthday;
-  //   return age;
-  // }
+  calculateAge(birthday, today){
+    let todayInSeconds = Math.round(new Date().getTime()/1000.0);
+    let ageInSeconds = todayInSeconds - birthdayInSeconds;
+    let ageInYears = ageInSeconds/31536000;
+    return ageInYears;
+  }
+
   inSeconds(age) {
     let ageInSeconds = age * 31536000;
     return ageInSeconds;
