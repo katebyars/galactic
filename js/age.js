@@ -3,11 +3,11 @@ export class Age {
     this.age = age;
   }
 
-  calculateAge(birthday, today){
-    let today = 
-    let age = today - birthday;
-    return age;
-  }
+  // calculateAge(birthday, today){
+  //   let today = 0;
+  //   let age = today - birthday;
+  //   return age;
+  // }
   inSeconds(age) {
     let ageInSeconds = age * 31536000;
     return ageInSeconds;
@@ -23,12 +23,12 @@ export class Age {
   }
 
   ageOnVenus(age){
-    let ageOnVenus = age *.62;
+    let ageOnVenus = age * 0.62;
     return ageOnVenus;
   }
 
   ageOnMercury(age){
-    let ageOnMercury = age *.24;
+    let ageOnMercury = age * 0.24;
     return Math.round(ageOnMercury);
   }
 
@@ -36,13 +36,13 @@ export class Age {
     let ageOnJupiter = age *11.86;
     return ageOnJupiter;
   }
-
-  lifeExpectancyOnEarth(age){
-    let yearsLeftToLive = 122 - age;
-    if
-    //righty or lefty (left -9)
-    //sleep per night(less than 6 h per night -?)
-    //
-    return yearsLeftToLive;
-  }
+  //
+  // lifeExpectancyOnEarth(age){
+  //   let yearsLeftToLive = 122 - age;
+  //   if
+  //   righty or lefty (left -9)
+  //   sleep per night(less than 6 h per night -?)
+  //
+  //   return yearsLeftToLive;
+  // }
 }
