@@ -29,3 +29,17 @@ describe ('Age', function(){
     expect(age.ageOnMars(37)).toEqual(69.56);
   });
 });
+
+  describe ('Age', function(){
+    it('should tell you how long you have left to live', function() {
+      let age = new Age(37);
+      expect(age.lifeExpectancyOnEarth(37, 4, 6, 6)).toEqual(65);
+    });
+  });
+
+  describe('Age', function(){
+    it('should tell you how long you have left to live on Mars', function() {
+      let age = new Age(37);
+      expect(age.lifeExpectancyOnMars(37)).toEqual(160);
+    });
+  });

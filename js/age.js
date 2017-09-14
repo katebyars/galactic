@@ -1,4 +1,5 @@
 export class Age {
+
   constructor(age){
     this.age = age;
   }
@@ -27,13 +28,20 @@ export class Age {
     let ageOnJupiter = age *11.86;
     return ageOnJupiter;
   }
-  //
-  // lifeExpectancyOnEarth(age){
-  //   let yearsLeftToLive = 122 - age;
-  //   if
-  //   righty or lefty (left -9)
-  //   sleep per night(less than 6 h per night -?)
-  //
-  //   return yearsLeftToLive;
-  // }
+
+  lifeExpectancyOnEarth(age, smoker, stress, diet){
+    let yearsLeftToLive = 122 - age;
+    if (smoker > 3 && stress > 5 && diet > 5) {
+      return yearsLeftToLive -= 20;
+    }
+    else {
+      return yearsLeftToLive;
+    }
+  }
+
+  lifeExpectancyOnMars(age) {
+    let thisAge = new Age(age);
+    let lifeExpectancyOnMars = thisAge.ageOnMars(122) - thisAge.ageOnMars(age);
+    return Math.round(lifeExpectancyOnMars);
+  }
 }

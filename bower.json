@@ -1,9 +1,9 @@
 {
-  "name": "galactic",
-  "description": "",
+  "name": "template",
+  "description": "Template for gulpfile",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "https://github.com/katebyars/galactic",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,12 +14,6 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
-    "moment": "^2.18.1"
-  },
-  "authors": [
-    "Kate Byars <katebyars5@gmail.com>"
-  ],
-  "devDependencies": {
     "moment": "^2.18.1"
   }
 }
