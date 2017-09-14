@@ -18,5 +18,8 @@
   },
   "authors": [
     "Kate Byars <katebyars5@gmail.com>"
-  ]
+  ],
+  "devDependencies": {
+    "moment": "^2.18.1"
+  }
 }

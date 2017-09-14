@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "galactic",
   "version": "1.0.0",
   "description": "Template for gulpfile ",
   "main": "gulpfile.js",
@@ -32,5 +32,14 @@
     "karma-jquery": "^0.2.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katebyars/galactic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katebyars/galactic/issues"
+  },
+  "homepage": "https://github.com/katebyars/galactic#readme"
 }

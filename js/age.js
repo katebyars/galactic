@@ -3,20 +3,17 @@ export class Age {
     this.age = age;
   }
 
-  calculateAge(birthday, today){
-    let todayInSeconds = Math.round(new Date().getTime()/1000.0);
-    let ageInSeconds = todayInSeconds - birthdayInSeconds;
-    let ageInYears = ageInSeconds/31536000;
-    return ageInYears;
-  }
+//date comes from moment
+  // calculateAge(birthday){
+  //   let todayInSeconds = (date.getTime() / 1000).moment().calendar().format();
+  //   let birthdayInSeconds = birthday.getTime()/1000;
+  //   let ageInSeconds = todayInSeconds - birthdayInSeconds;
+  //   return ageInSeconds;
+  // }
 
   inSeconds(age) {
     let ageInSeconds = age * 31536000;
     return ageInSeconds;
-  }
-
-  yourAge(birthday){
-
   }
 
   ageOnMars(age){
