@@ -63,3 +63,10 @@ describe ('Age', function(){
       expect(age.lifeExpectancyOnJupiter(37)).toEqual(1447);
     });
   });
+
+  describe('Age', function(){
+    it('should tell you if you are past your prime on Jupiter', function() {
+      let age = new Age(37);
+      expect(age.haveYouPassedYourPrimeOnJupiter(100)).toEqual(true);
+    });
+  });
