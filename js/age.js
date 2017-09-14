@@ -61,4 +61,19 @@ export class Age {
     let lifeExpectancyOnJupiter = thisAge.ageOnJupiter(122); thisAge.ageOnJupiter(age);
     return Math.round(lifeExpectancyOnJupiter);
   }
+
+  haveYouPassedYourPrime(age) {
+    let thisAge = new Age(age);
+    let maxAge = new Age(122);
+
+    let ageOnMars = thisAge.ageOnMars;
+    let ageOnVenue = thisAge.ageOnVenus;
+    let ageOnMercury = thisAge.ageOnMercury;
+    let ageOnJupiter = thisAge.ageOnJupiter;
+
+    let lifeExpectancyOnJupiter = lifeExpectancyOnJupiter(122);
+    let lifeExpectancyOnMercury = lifeExpectancyOnMercury(122);
+    let lifeExpectancyOnVenus = lifeExpectancyOnVenus(122);
+    let lifeExpectancyOnMars = lifeExpectancyOnMars(122);
+  }
 }
