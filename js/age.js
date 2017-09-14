@@ -44,4 +44,21 @@ export class Age {
     let lifeExpectancyOnMars = thisAge.ageOnMars(122) - thisAge.ageOnMars(age);
     return Math.round(lifeExpectancyOnMars);
   }
+
+  lifeExpectancyOnVenus(age) {
+    let thisAge = new Age(age);
+    let lifeExpectancyOnVenus = thisAge.ageOnVenus(122) - thisAge.ageOnVenus(age);
+    return Math.round(lifeExpectancyOnVenus);
+  }
+  lifeExpectancyOnMercury(age) {
+    let thisAge = new Age(age);
+    let lifeExpectancyOnMercury = thisAge.ageOnMercury(122); thisAge.ageOnMercury(age);
+    return Math.round(lifeExpectancyOnMercury);
+  }
+
+  lifeExpectancyOnJupiter(age) {
+    let thisAge = new Age(age);
+    let lifeExpectancyOnJupiter = thisAge.ageOnJupiter(122); thisAge.ageOnJupiter(age);
+    return Math.round(lifeExpectancyOnJupiter);
+  }
 }
