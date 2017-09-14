@@ -64,9 +64,30 @@ describe ('Age', function(){
     });
   });
 
+  // describe('Age', function(){
+  //   it('should tell you if you are past your prime on Jupiter', function() {
+  //     let age = new Age(37);
+  //     expect(age.haveYouPassedYourPrimeOnJupiter(100)).toEqual(false);
+  //   });
+  // });
+  //
   describe('Age', function(){
-    it('should tell you if you are past your prime on Jupiter', function() {
+    it('should tell you if you are past your prime on Mars', function() {
       let age = new Age(37);
-      expect(age.haveYouPassedYourPrimeOnJupiter(100)).toEqual(true);
+      expect(age.haveYouPassedYourPrimeOnMars(100)).toEqual(false);
+    });
+  });
+
+  describe('Age', function(){
+    it('should tell you if you are past your prime on Mercury', function() {
+      let age = new Age(37);
+      expect(age.haveYouPassedYourPrimeOnMercury(100)).toEqual(false);
+    });
+  });
+
+  describe('Age', function(){
+    it('should tell you if you are past your prime on Venus', function() {
+      let age = new Age(37);
+      expect(age.haveYouPassedYourPrimeOnVenus(100)).toEqual(false);
     });
   });
