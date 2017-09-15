@@ -27,11 +27,20 @@ $(document).ready(function() {
     let lifeExpectancyOnMercury = earthAge.lifeExpectancyOnMercury(yourAge, smoker, stress, diet);
     let lifeExpectancyOnVenus = earthAge.lifeExpectancyOnVenus(yourAge, smoker, stress, diet);
 
+
+
     $("#output").html("<li>Your age on Earth:  " + yourAge + "</li>" +"<li>Your age on Venus:  " + venus + "</li>" +"<li>Your age on Jupiter:  " + jupiter + "</li>" + "<li>Your age on Mars:  " + mars + "</li>" + "<li>Your age on Mercury:  " + mercury + "</li>");
 
     $("#vitalSigns").html("<li> on Earth: " +  lifeExpectancyOnEarth + "</li>" + "<li> on Venus: " +  lifeExpectancyOnVenus + "</li>" + "<li> on Jupiter: " +  lifeExpectancyOnJupiter + "</li>" + "<li> on Mars: " +  lifeExpectancyOnMars + "</li>"  + "<li> on Mercury: " +  lifeExpectancyOnMercury + "</li>");
 
+    let primes = earthAge.haveYouPassedYourPrime(yourAge);
+    console.log(primes);
+    function pastPrime(primes) {
+      for (var i = 0;  i < primes.length; i++)
+      {
+         $("#pastPrime").html("<li>" + primes[i] + "</li>");
+       }
+    }
     $("input").val("");
-  });
 
 });
