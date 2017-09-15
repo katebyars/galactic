@@ -14,18 +14,22 @@ $(document).ready(function() {
     let stress = $("#stress").val();
 
     let yourBirthday = new Birthday(birthday);
-    let yourAge = yourBirthday.calculateAge();
+    let yourAge = Math.round(yourBirthday.calculateAge());
     let earthAge = new Age(yourAge);
-    let venus = earthAge.ageOnVenus(yourAge);
-    let jupiter = earthAge.ageOnJupiter(yourAge);
-    let mars = earthAge.ageOnMars(yourAge);
-    let mercury = earthAge.ageOnMercury(yourAge);
+    let venus = Math.round(earthAge.ageOnVenus(yourAge));
+    let jupiter = Math.round(earthAge.ageOnJupiter(yourAge));
+    let mars = Math.round(earthAge.ageOnMars(yourAge));
+    let mercury = Math.round(earthAge.ageOnMercury(yourAge));
 
     let lifeExpectancyOnEarth = earthAge.lifeExpectancyOnEarth(yourAge, smoker, stress, diet);
+    let lifeExpectancyOnMars = earthAge.lifeExpectancyOnMars(yourAge, smoker, stress, diet);
+    let lifeExpectancyOnJupiter = earthAge.lifeExpectancyOnJupiter(yourAge, smoker, stress, diet);
+    let lifeExpectancyOnMercury = earthAge.lifeExpectancyOnMercury(yourAge, smoker, stress, diet);
+    let lifeExpectancyOnVenus = earthAge.lifeExpectancyOnVenus(yourAge, smoker, stress, diet);
 
-    $("#output").append("<li> Your age on Earth:  " + yourAge + "</li>" +"<li> Your age on Venus:  " + venus + "</li>" +"<li> Your age on Jupiter:  " + jupiter + "</li>" + "<li> Your age on Mars:  " + mars + "</li>" + "<li> Your age on Mercury:  " + mercury + "</li>");
+    $("#output").html("<li> Your age on Earth:  " + yourAge + "</li>" +"<li> Your age on Venus:  " + venus + "</li>" +"<li> Your age on Jupiter:  " + jupiter + "</li>" + "<li> Your age on Mars:  " + mars + "</li>" + "<li> Your age on Mercury:  " + mercury + "</li>");
 
-    $("vitalSigns").append("<li> On earth: " +  lifeExpectancyOnEarth);
+    $("#vitalSigns").html("<li> on Earth: " +  lifeExpectancyOnEarth + "</li>" + "<li> on Venus: " +  lifeExpectancyOnVenus + "</li>" + "<li> on Jupiter: " +  lifeExpectancyOnJupiter + "</li>" + "<li> on Mars: " +  lifeExpectancyOnMars + "</li>"  + "<li> on Mercury: " +  lifeExpectancyOnMercury + "</li>");
 
     $("input").val("");
   });
