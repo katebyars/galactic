@@ -8,87 +8,100 @@
     <title>Galactic Age</title>
   </head>
   <body>
-    <div class="container">
-      <div class="col-md-9">
-        <h1>Find Your Galactic Age!</h1>
-        <form id="birthday-form">
-          <div class="form-group">
-            <label for="month">Your Birthday Month</label>
-            <select id="month" name="month">
-              <option id="January" value="January">January</option>
-              <option id="February" value="February">February</option>
-              <option id="March" value="March">March</option>
-              <option id="April" value="April">April</option>
-              <option id="May" value="May">May</option>
-              <option id="June" value="June">June</option>
-              <option id="July" value="July">July</option>
-              <option id="August" value="August">August</option>
-              <option id="September" value="September">September</option>
-              <option id="October" value="October">October</option>
-              <option id="November" value="November">November</option>
-              <option id="December" value="December">December</option>
-            </select>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>GALACTIC AGE CALCULATOR</h1>
+      </div>
+        <div class="col-md-9">
+          <div class="panel panel-transparent panel-left">
+            <h2 class="panel-heading">Your Stats</h2>
+            <div class="panel-body">
+              <form id="birthday-form">
+              <div class="form-group">
+                <label for="month">Your Birthday Month</label>
+                <select id="month" name="month">
+                  <option id="January" value="January">January</option>
+                  <option id="February" value="February">February</option>
+                  <option id="March" value="March">March</option>
+                  <option id="April" value="April">April</option>
+                  <option id="May" value="May">May</option>
+                  <option id="June" value="June">June</option>
+                  <option id="July" value="July">July</option>
+                  <option id="August" value="August">August</option>
+                  <option id="September" value="September">September</option>
+                  <option id="October" value="October">October</option>
+                  <option id="November" value="November">November</option>
+                  <option id="December" value="December">December</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="day">Day</label>
+                <input id="day" class="form-control" type="number" required>
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input id="year" class="form-control" type="number" required>
+              </div>
+              <h2>Other Factors</h2>
+              <form id="lifeExpectancy">
+                <div class="form-group">
+                  <label for="smoker">How many times per week do you smoke?</label>
+                  <select id="smoker" name="smoker">
+                    <option id="1" value="1">1</option>
+                    <option id="2" value="2">2</option>
+                    <option id="3" value="3">3</option>
+                    <option id="4" value="4">4</option>
+                    <option id="5" value="5">5</option>
+                    <option id="6" value="6">6</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="stress">On a scale of one (misty yoga lake) to ten (coffee for blood) what is your weekly stress level?</label>
+                    <select id="stress" name="stress">
+                    <option id="1" value="1">1</option>
+                    <option id="2" value="2">2</option>
+                    <option id="3" value="3">3</option>
+                    <option id="4" value="4">4</option>
+                    <option id="5" value="5">5</option>
+                    <option id="6" value="6">6</option>
+                    <option id="7" value="7">7</option>
+                    <option id="8" value="8">8</option>
+                    <option id="9" value="9">9</option>
+                    <option id="10" value="10">10</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="diet">On a scale of one (vegan) to ten ('merica!'), what is the quality of your diet?</label>
+                  <select id="diet" name="diet">
+                    <option id="1" value="1">1</option>
+                    <option id="2" value="2">2</option>
+                    <option id="3" value="3">3</option>
+                    <option id="4" value="4">4</option>
+                    <option id="5" value="5">5</option>
+                    <option id="6" value="6">6</option>
+                    <option id="7" value="7">7</option>
+                    <option id="8" value="8">8</option>
+                    <option id="9" value="9">9</option>
+                    <option id="10" value="10">10</option>
+                  </select>
+                </div>
+              <button class="btn" type="submit">Show My Age!</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="day">Day</label>
-            <input id="day" class="form-control" type="number" required>
-          </div>
-          <div class="form-group">
-            <label for="year">Year</label>
-            <input id="year" class="form-control" type="number" required>
-          </div>
-          <h2>Other Factors</h2>
-          <form id="lifeExpectancy">
-            <div class="form-group">
-              <label for="smoker">How many times per week do you smoke?</label>
-              <select id="smoker" name="smoker">
-                <option id="1" value="1">1</option>
-                <option id="2" value="2">2</option>
-                <option id="3" value="3">3</option>
-                <option id="4" value="4">4</option>
-                <option id="5" value="5">5</option>
-                <option id="6" value="6">6</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="stress">On a scale of one (misty yoga lake) to ten (coffee for blood) what is your weekly stress level?</label>
-                <select id="stress" name="stress">
-                <option id="1" value="1">1</option>
-                <option id="2" value="2">2</option>
-                <option id="3" value="3">3</option>
-                <option id="4" value="4">4</option>
-                <option id="5" value="5">5</option>
-                <option id="6" value="6">6</option>
-                <option id="7" value="7">7</option>
-                <option id="8" value="8">8</option>
-                <option id="9" value="9">9</option>
-                <option id="10" value="10">10</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="diet">On a scale of one (vegan) to ten ('merica!'), what is the quality of your diet?</label>
-              <select id="diet" name="diet">
-                <option id="1" value="1">1</option>
-                <option id="2" value="2">2</option>
-                <option id="3" value="3">3</option>
-                <option id="4" value="4">4</option>
-                <option id="5" value="5">5</option>
-                <option id="6" value="6">6</option>
-                <option id="7" value="7">7</option>
-                <option id="8" value="8">8</option>
-                <option id="9" value="9">9</option>
-                <option id="10" value="10">10</option>
-              </select>
-            </div>
-          <button class="btn" type="submit">Show My Age!</button>
-        </form>
+        </div>
       </div>
       <div class="col-md-3">
-        <h2>yourAGE</h2>
-        <div id="output">
-        </div>
-        <h2>yearsLEFT</h2>
-        <div id="vitalSigns">
+        <div class="panel panel-transparent panel-right">
+          <div class="panel-heading">
+            <h2 class="panel-title">Age</h2>
+            <div id="output">
+            </div>
+          </div>
+          <div class="panel-heading">
+            <h2 class="panel-title">Years left to live</h2>
+            <div id="vitalSigns">
+            </div>
+          </div>
         </div>
       </div>
     </div>

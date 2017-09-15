@@ -1,3 +1,37 @@
+body {
+  background: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  background: rgba(245, 245, 245, 0.7)!important;
+  margin-top: 100px;
+}
+.panel-left {
+  margin-top: 20px;
+}
+.panel-right {
+  margin-top: 20px;
+}
+
+  .panel-transparent {
+      background: rgba(245, 245, 245, 0.7)!important;
+  }
+
+  .panel-transparent .panel-heading{
+      background: rgba(122, 130, 136, 0.2)!important;
+  }
+
+  .panel-transparent .panel-body{
+      background: rgba(46, 51, 56, 0.2)!important;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
 h1 {
-  color: red;
+  font-size: 45px;
+  text-align: center;
 }

@@ -1,54 +1,50 @@
-## Planning
+# Galactic Age
 
-1. Configuration/dependencies
-  * Karma
-  * Gulp
-  * Browserify
-  * Vinyl Source Stream
-  * JSHint
-  * Bootstrap
-  * Jasmine
-  * Babelify
-  * Watchify
-  * Bower
+#### Epicodus Fall 2017
 
-2. Specs
-  Index
-  * Make form to input age
-  * Make form to input life expectancy factors
-  * Make an area to display output (age here, on planets and life expenctancy calc)
+#### Author : Kate Byars
 
-  Age.js
-  * Make Age Class
-  * Method - convert to seconds + Test
-  * Method - convert to planet years (are these promises?) + Test
-  * Method - calculate life expectancy (are these promises?) + Test
-  <!-- possibly for later: use life expectancy API to do this calculation  -->
+## Description
 
-  Age-Interface.js
-  * Take in form data
-  * Use Method - convert to seconds
-  * Use Method - convert to planet years (are these promises?)
-  * Use Method - calculate life expectancy
-  * Use Method - calculate life expectancy on other planets (are these promises?)
-  * Display - convert to seconds
-  * Display - convert to planet years (are these promises?)
-  * Display - calculate life expectancy
-  * Display - calculate life expectancy on other planets (are these promises?)
+_An application which allows you to find out how old you are on each planet as well as how long you have left to live._
 
-3. Integration
-  <!-- * Initial routes or index pages with all dependencies in Controller/index.html head
-  * Template/html page for ...
-  * Template/html page for ...
-  * Template/html page for ... (one for each route/integrated user story)
-  * Display...
-  * Integrate feature that... -->
+_xx._
+![Image of Main page](images/screenshot2.png)
+_xx._
+![Looking up planets](images/screenshot.png)
 
-4. UX/UI
-  <!-- * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style -->
+## Setup/Installation Requirements
+Bower, NPM and dependencies as listed in the files uploaded in this application.
 
-5. Polish
-  <!-- * Refactor minor portion of...
-  * Delete unused...
-  * Make README awesome -->
+* Clone this project from git hub
+* install NPM
+* initialize all the dependencies
+
+## Specifications
+
+| Behavior      | Example Input      | Example Output       |
+| ------------- | ------------- | ------------- |
+| Birthday returns age in seconds | 1 year  | 31536000 seconds |
+| Age on earth returns age on Mercury | 37 years old | 9 |
+| Age on earth returns age on Venus | 37 years old | 23 |
+| Age on earth returns age on Jupiter | 37 years old | 439 |
+| Age on earth returns age on Mars | 37 years old | 70 |
+| Age on earth returns years left o live on a planet based on max lifespan of 122 years old | 37 years old on Earth| 85 years left to live |
+| Age on earth returns years left to live based on several health factors | 37 year old who smokes, is stressed and eats poorly | 65 years left to live |
+## Inquiries ##
+_katebyars5@gmail.com
+
+## Known Bugs
+_No known bugs._
+
+## Technologies Used
+
+* _Atom_
+* _Gulp_
+* _Bower_
+* _Karma_
+* _Jasmine_
+
+### License
+
+Copyright &copy; 2017 Kate Byars
