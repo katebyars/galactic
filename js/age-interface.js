@@ -5,11 +5,13 @@ import { Birthday } from './../js/birthday.js';
 $(document).ready(function() {
   $("#birthday-form").submit(function(event){
     event.preventDefault();
-    let birthday = $("#birthday").val();
-    //format input to correct date format?
+    let month = $("#month").val();
+    let day = $("#day").val();
+    let year = $("#year").val();
+    let birthday = month.concat(" ", day, ", ", year, " 12:00:01");
+
     let yourBirthday = new Birthday(birthday);
-    console.log(yourBirthday);
-    yourAge = yourBirthday.calculateAge();
+    let yourAge = yourBirthday.calculateAge();
     console.log(yourAge);
     let earthAge = new Age(yourAge);
     let venus = earthAge.ageOnVenus(yourAge);

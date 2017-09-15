@@ -13,11 +13,34 @@
             <h1>Find Your Galactic Age!</h1>
             <form id="birthday-form">
               <div class="form-group">
-                <label for="birthday">Enter Your Birthday</label>
-                <p>Be sure to use this format : YYYYMMDD</p>
-                <input id="birthday" class="form-control" required>
-                <button class="btn" type="submit">Show My Age!</button>
+                <label for="month">Your Birthday Month</label>
+                <select id="month" name="month">
+                  <option id=January value="January">January</option>
+                  <option id=February value="February">February</option>
+                  <option id="March" value="March">March</option>
+                  <option id="April" value="April">April</option>
+                  <option id="May" value="May">May</option>
+                  <option id="June" value="June">June</option>
+                  <option id="July" value="July">July</option>
+                  <option id="August" value="August">August</option>
+                  <option id="September" value="September">September</option>
+                  <option id="October" value="October">October</option>
+                  <option id="November" value="November">November</option>
+                  <option id="December" value="December">December</option>
+                </select>
               </div>
+              <div class="form-group">
+                <label for="day">Day</label>
+                <input id="day" class="form-control" type="text" required>
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input id="year" class="form-control" type="text" required>
+              </div>
+
+
+                <button class="btn" type="submit">Show My Age!</button>
+
             </form>
             <!-- <p>
             <!-- //output area with planetary ages + Earth Age + time left to live on Earth -->
