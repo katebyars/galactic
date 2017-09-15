@@ -12,14 +12,13 @@ $(document).ready(function() {
 
     let yourBirthday = new Birthday(birthday);
     let yourAge = yourBirthday.calculateAge();
-    console.log(yourAge);
     let earthAge = new Age(yourAge);
     let venus = earthAge.ageOnVenus(yourAge);
     let jupiter = earthAge.ageOnJupiter(yourAge);
     let mars = earthAge.ageOnMars(yourAge);
     let mercury = earthAge.ageOnMercury(yourAge);
     let newPerson = new Person(earthAge, venus, jupiter, mars, mercury);
-    $("#output").append("<li>" + newPerson.earth + "</li>");
+    $("#output").append("<li> Your age on Earth:  " + yourAge + "</li>" +"<li> Your age on Venus:  " + venus + "</li>" +"<li> Your age on Jupiter:  " + jupiter + "</li>" + "<li> Your age on Mars:  " + mars + "</li>" + "<li> Your age on Mercury:  " + mercury + "</li>");
 
     $("input").val("");
 
