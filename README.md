@@ -8,10 +8,18 @@
 
 _An application which allows you to find out how old you are on each planet as well as how long you have left to live._
 
-_xx._
-![Image of Main page](images/screenshot2.png)
-_xx._
-![Looking up planets](images/screenshot.png)
+_The home page of the application._
+![Home](images/1.png)
+
+_You may select various health factors to calculate your expected life span._
+![Select For Health Factors](images/2.png)
+
+_You may select the month for your birthday._
+![Select For Health Factors](images/3.png)
+
+_Results for your age on other planets as well as your expected time of death are displayed to the right._
+![Select For Health Factors](images/4.png)
+
 
 ## Setup/Installation Requirements
 Bower, NPM and dependencies as listed in the files uploaded in this application.
