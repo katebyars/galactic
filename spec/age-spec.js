@@ -74,7 +74,7 @@ describe ('Age', function(){
   describe('Age', function(){
     it('should tell you if you are past your prime on Mercury', function() {
       let age = new Age(37);
-      expect(age.haveYouPassedYourPrimeOnMercury(37)).toEqual(true);
+      expect(age.haveYouPassedYourPrimeOnMercury(37)).toEqual(false);
     });
   });
 
