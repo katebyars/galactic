@@ -1,15 +1,36 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Galactic Age</title>
   </head>
   <body>
-    <h1>Test</h1>
-    <h3 id="time"></h3>
+    <div class="container">
+          <div class="col-md-8">
+            <h1>Find Your Galactic Age!</h1>
+            <form id="birthday-form">
+              <div class="form-group">
+                <label for="birthday">Enter Your Birthday</label>
+                <p>Be sure to use this format : YYYYMMDD</p>
+                <input id="birthday" class="form-control" required>
+                <button class="btn" type="submit">Show My Age!</button>
+              </div>
+            </form>
+            <!-- <p>
+            <!-- //output area with planetary ages + Earth Age + time left to live on Earth -->
+            </p>
+            <form>
+            <!-- //but what is your actual life expectancy? -->
+            </form>
+        </div>
+        <div class="col-md-2">
+          <h2>Your Age On Earth</h2>
+          <div id="output">
+          </div>
+        </div>
+    </div>
   </body>
 </html>

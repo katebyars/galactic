@@ -4,10 +4,10 @@ export class Birthday {
   }
 
   calculateAge() {
-    var today = new Date();
-    var birthday = new Date(this.birthdayString);
-    var age = today.getFullYear() - birthday.getFullYear();
-    var m = today.getMonth() - birthday.getMonth();
+    let today = new Date();
+    let birthday = new Date(this.birthdayString);
+    let age = today.getFullYear() - birthday.getFullYear();
+    let m = today.getMonth() - birthday.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }

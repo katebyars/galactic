@@ -5,5 +5,4 @@ describe ('Birthday', function(){
     let birthday = new Birthday(19800503);
     expect(birthday.calculateAge()).toEqual(37);
   });
-
 });
