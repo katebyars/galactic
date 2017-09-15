@@ -43,7 +43,10 @@ Bower, NPM and dependencies as listed in the files uploaded in this application.
 _katebyars5@gmail.com
 
 ## Known Bugs
-_Negative numbers._
+_Negative numbers for "Years Left To Live" should display as red or "dead now" message._
+_You Should Be Dead area should over write previous results._
+_You Should Be Dead planets are not calculating correctly._
+
 
 ## Technologies Used
 

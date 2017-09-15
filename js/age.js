@@ -129,16 +129,16 @@ export class Age {
     if (anAge.haveYouPassedYourPrimeOnJupiter(age)) {
       primes.push("Jupiter");
     }
-    if (anAge.haveYouPassedYourPrimeOnMercury(age) === true) {
+    if (anAge.haveYouPassedYourPrimeOnMercury(age)) {
       primes.push("Mercury");
     }
-    if (anAge.haveYouPassedYourPrimeOnEarth(age) === true){
+    if (anAge.haveYouPassedYourPrimeOnEarth(age)){
       primes.push("Earth");
     }
-    if (anAge.haveYouPassedYourPrimeOnVenus(age) === true){
+    if (anAge.haveYouPassedYourPrimeOnVenus(age)){
       primes.push("Venus");
     }
-    if (anAge.haveYouPassedYourPrimeOnMars(age) === true){
+    if (anAge.haveYouPassedYourPrimeOnMars(age)){
       primes.push("Mars");
     }
     return primes;

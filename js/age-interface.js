@@ -38,7 +38,7 @@ $(document).ready(function() {
     // };
 
     $.each(primes, function(index, prime){
-      $('#pastPrime').html($('#pastPrime').html() + '<li>' + prime +'</li>');
+      $('#pastPrime').html($('#pastPrime').html() + '<span> ' + prime +' </span>');
     });
 
     $("input").val("");

@@ -64,24 +64,17 @@ describe ('Age', function(){
     });
   });
 
-  // describe('Age', function(){
-  //   it('should tell you if you are past your prime on Jupiter', function() {
-  //     let age = new Age(37);
-  //     expect(age.haveYouPassedYourPrimeOnJupiter(100)).toEqual(false);
-  //   });
-  // });
-  //
   describe('Age', function(){
     it('should tell you if you are past your prime on Mars', function() {
       let age = new Age(37);
-      expect(age.haveYouPassedYourPrimeOnMars(100)).toEqual(false);
+      expect(age.haveYouPassedYourPrimeOnMars(300)).toEqual(true);
     });
   });
 
   describe('Age', function(){
     it('should tell you if you are past your prime on Mercury', function() {
       let age = new Age(37);
-      expect(age.haveYouPassedYourPrimeOnMercury(100)).toEqual(false);
+      expect(age.haveYouPassedYourPrimeOnMercury(2000)).toEqual(true);
     });
   });
 

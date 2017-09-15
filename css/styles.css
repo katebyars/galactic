@@ -4,7 +4,7 @@ body {
   background-size: cover;
 }
 label {
-    font-size: 18px;
+    font-size: 20px;
   }
 
 h1 {
@@ -14,15 +14,15 @@ h1 {
 
 select {
   margin-left: 12px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
 }
 li {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .death {
