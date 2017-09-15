@@ -24,6 +24,10 @@ p {
 li {
   font-size: 14px;
 }
+
+.death {
+  color: red;
+}
 .panel-title {
   font-size: 22px;
 }

@@ -67,7 +67,7 @@ export class Age {
     let thisAge = new Age(age);
     let ageOnEarth = thisAge.age;
     let lifeExpectancyOnEarth = thisAge.lifeExpectancyOnEarth(122);
-    if (ageOnEarch>lifeExpectancyOnEarth) {
+    if (ageOnEarth>lifeExpectancyOnEarth) {
       return true;
     }
     else {
@@ -124,26 +124,23 @@ export class Age {
   }
 
   haveYouPassedYourPrime(age){
+    let anAge = new Age(age);
     let primes = [];
-    if (haveYouPassedYourPrimeOnJupiter(age)) {
+    if (anAge.haveYouPassedYourPrimeOnJupiter(age)) {
       primes.push("Jupiter");
     }
-    if (let mercury = haveYouPassedYourPrimeOnMercury(age)) {
+    if (anAge.haveYouPassedYourPrimeOnMercury(age) === true) {
       primes.push("Mercury");
     }
-    if (let earth = haveYouPassedYourPrimeOnEarth(age)){
+    if (anAge.haveYouPassedYourPrimeOnEarth(age) === true){
       primes.push("Earth");
     }
-    if (let venus = haveYouPassedYourPrimeOnVenus(age)){
+    if (anAge.haveYouPassedYourPrimeOnVenus(age) === true){
       primes.push("Venus");
     }
-    if (let mars = haveYouPassedYourPrimeOnMars(age)){
+    if (anAge.haveYouPassedYourPrimeOnMars(age) === true){
       primes.push("Mars");
-    };
-
+    }
     return primes;
-
-
   }
-
 }
